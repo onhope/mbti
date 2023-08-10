@@ -46,7 +46,7 @@ function addAnswer(answerText, qIdx) {
 }
 
 function goNext(qIdx) {
-    if (qIdx+1 === endpoint) {
+    if (qIdx === endpoint) {
       goResult();
       return;
     }
