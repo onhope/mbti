@@ -1,3 +1,28 @@
 #result {
   display: none;
+  background-color: whitesmoke;
+  width: 80%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.resultname {
+  font-size: 26px;
+}
+
+.resultdesc {
+  font-size: 20px;
+}
+
+.kakao {
+  background-color: #FEE500;
+  color: white;
+  border-radius: 20px;
+  border: 0px;
+  font-size: 20px;
+}
+
+.kakao:hover, .kakao:focus {
+  background-color: whitesmoke;
+  color: #FEE500;
 }
