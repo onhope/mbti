@@ -6,8 +6,24 @@ const select = [0,0,0,0,0,0,0,0,0,0,0,0];
 
 function calResult() {
   let result = select.indexOf(Math.max(...select));
-  console.log(result);
   return result;
+}
+
+function setResult() {
+  let point = calResult();
+  const resultName = document.querySelector(".resultname");
+  resultName.innerHTML = infoList[point].name;
+
+  const resultImg = document.createElement("img");
+  const imgDiv = document.querySelector("#resultImg");
+  let imgUrl = 'img/image-' + point + '.png';
+  resultImg.src = imgUrl;
+  resultImg.alt = point;
+  imgDiv.appendChild(resultImg);
+
+  const resultDesc = document.querySelector(".resultdesc");
+  resultDesc.innerHTML = infoList[point].desc;
+
 }
 
 function goResult() {
@@ -23,7 +39,7 @@ function goResult() {
     }, 450);
   }, 450);
 
-  calResult();
+  setResult();
 }
 
 function addAnswer(answerText, qIdx, idx) {
