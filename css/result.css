@@ -6,6 +6,13 @@
   text-align: center;
 }
 
+#shareResult {
+  background-color: whitesmoke;
+  width: 80%;
+  border-radius: 20px;
+  text-align: center;
+}
+
 .resultname {
   font-size: 26px;
 }
@@ -25,4 +32,17 @@
 .kakao:hover, .kakao:focus {
   background-color: whitesmoke;
   color: #FEE500;
+}
+
+.gohome {
+  background-color: pink;
+  color: white;
+  border-radius: 20px;
+  border: 0px;
+  font-size: 20px;
+}
+
+.gohome:hover, .gohome:focus {
+  background-color: whitesmoke;
+  color: pink;
 }
